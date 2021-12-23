@@ -45,7 +45,6 @@ class Supplier extends CI_Controller
         }
     }
 
-
     public function edit($getId)
     {
         $id = encode_php_tags($getId);

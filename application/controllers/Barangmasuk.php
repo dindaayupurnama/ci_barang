@@ -52,7 +52,7 @@ class Barangmasuk extends CI_Controller
                 set_pesan('data berhasil disimpan.');
                 redirect('barangmasuk');
             } else {
-                set_pesan('Opps ada kesalahan!');
+                set_pesan('Oppss ada kesalahan!!!');
                 redirect('barangmasuk/add');
             }
         }

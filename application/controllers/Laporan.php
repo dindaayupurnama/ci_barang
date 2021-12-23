@@ -20,7 +20,8 @@ class Laporan extends CI_Controller
         if ($this->form_validation->run() == false) {
             $data['title'] = "Laporan Transaksi";
             $this->template->load('templates/dashboard', 'laporan/form', $data);
-        } else {
+        }
+        else {
             $input = $this->input->post(null, true);
             $table = $input['transaksi'];
             $tanggal = $input['tanggal'];

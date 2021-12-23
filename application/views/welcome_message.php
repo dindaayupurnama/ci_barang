@@ -63,8 +63,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		border: 1px solid #D0D0D0;
 		box-shadow: 0 0 8px #D0D0D0;
 	}
-	</style>
-</head>
+		</style>
+	</head>
 <body>
 
 <div id="container">

@@ -53,7 +53,7 @@ class Auth extends CI_Controller
                     redirect('auth');
                 }
             } else {
-                set_pesan('username belum terdaftar', false);
+                set_pesan('Username belum terdaftar', false);
                 redirect('auth');
             }
         }

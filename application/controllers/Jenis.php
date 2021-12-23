@@ -53,13 +53,15 @@ class Jenis extends CI_Controller
             $data['title'] = "Jenis";
             $data['jenis'] = $this->admin->get('jenis', ['id_jenis' => $id]);
             $this->template->load('templates/dashboard', 'jenis/edit', $data);
-        } else {
+        }
+        else {
             $input = $this->input->post(null, true);
             $update = $this->admin->update('jenis', 'id_jenis', $id, $input);
-            if ($update) {
+        if ($update) {
                 set_pesan('data berhasil disimpan');
                 redirect('jenis');
-            } else {
+        }
+        else {
                 set_pesan('data gagal disimpan', false);
                 redirect('jenis/add');
             }

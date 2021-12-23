@@ -120,7 +120,7 @@ class User extends CI_Controller
     {
         $id = encode_php_tags($getId);
         $status = $this->admin->get('user', ['id_user' => $id])['is_active'];
-        $toggle = $status ? 0 : 1; //Jika user aktif maka nonaktifkan, begitu pula sebaliknya
+        $toggle = $status ? 0 : 1;
         $pesan = $toggle ? 'user diaktifkan.' : 'user dinonaktifkan.';
 
         if ($this->admin->update('user', 'id_user', $id, ['is_active' => $toggle])) {

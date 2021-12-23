@@ -14,7 +14,7 @@ class Barangkeluar extends CI_Controller
 
     public function index()
     {
-        $data['title'] = "Barang keluar";
+        $data['title'] = "Barang Keluar";
         $data['barangkeluar'] = $this->admin->getBarangkeluar();
         $this->template->load('templates/dashboard', 'barang_keluar/data', $data);
     }

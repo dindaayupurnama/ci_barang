@@ -26,7 +26,6 @@ class Dashboard extends CI_Controller
             'barang_keluar' => $this->admin->getBarangKeluar(5)
         ];
 
-        // Line Chart
         $bln = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
         $data['cbm'] = [];
         $data['cbk'] = [];

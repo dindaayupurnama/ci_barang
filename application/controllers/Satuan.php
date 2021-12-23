@@ -57,10 +57,10 @@ class Satuan extends CI_Controller
             $input = $this->input->post(null, true);
             $update = $this->admin->update('satuan', 'id_satuan', $id, $input);
             if ($update) {
-                set_pesan('data berhasil disimpan');
+                set_pesan('data berhasil disimpan.');
                 redirect('satuan');
             } else {
-                set_pesan('data gagal disimpan', false);
+                set_pesan('data gagal disimpan.', false);
                 redirect('satuan/add');
             }
         }
